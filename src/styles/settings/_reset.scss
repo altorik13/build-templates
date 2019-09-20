@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+:root {
+  font-size: 10px;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+nav ul,
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: 0px solid;
+  padding: 0;
+  margin: 0;
+}
+
+figure{
+  margin: 0;
+}

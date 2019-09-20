@@ -1,37 +1,28 @@
 {
-  "name": "webpacktemplate",
+  "name": "hw_task1",
   "version": "1.0.0",
-  "description": "My template",
-  "main": "entry.js",
+  "description": "template building",
+  "main": "gulpfile.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./config/webpack.dev.conf.js",
-    "build": "webpack --config ./config/webpack.build.conf.js"
+    "dev": "gulp dev",
+    "clear": "gulp clear"
   },
-  "browserslist": [
-    "> 1%",
-    "last 3 versions"
-  ],
-  "author": "Alex",
+  "author": "Oleksandr Revchuk",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
     "autoprefixer": "^9.6.1",
-    "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^3.0.0",
-    "css-mqpacker": "^7.0.0",
+    "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
-    "file-loader": "^4.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.5.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^4.12.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.4.1",
-    "webpack-merge": "^4.2.1"
+    "precss": "^4.0.0"
   }
 }

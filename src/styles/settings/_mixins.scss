@@ -1,0 +1,93 @@
+$xlg:1600px;
+$lg:1300px;
+$md:950px;
+$sm:600px;
+$xsm:420px;
+
+// screen width media querries (max)
+@mixin screen-width($scrwdth) {
+  @media (max-width: $scrwdth) {
+    @content;
+  }
+}
+
+@mixin screen-xlg() {
+  @include screen-width($xlg) {
+    @content;
+  }
+}
+@mixin screen-lg() {
+  @include screen-width($lg) {
+    @content;
+  }
+}
+@mixin screen-md() {
+  @include screen-width($md) {
+    @content;
+  }
+}
+@mixin screen-sm() {
+  @include screen-width($sm) {
+    @content;
+  }
+}
+@mixin screen-xsm() {
+  @include screen-width($xsm) {
+    @content;
+  }
+}
+// screen width media querries (min)
+@mixin screen-min-width($scrwdthM) {
+  @media (min-width: $scrwdthM + 1) {
+    @content;
+  }
+}
+
+@mixin screen-m-xlg() {
+  @include screen-min-width($xlg) {
+    @content;
+  }
+}
+@mixin screen-m-lg() {
+  @include screen-min-width($lg) {
+    @content;
+  }
+}
+@mixin screen-m-md() {
+  @include screen-min-width($md) {
+    @content;
+  }
+}
+@mixin screen-m-sm() {
+  @include screen-min-width($sm) {
+    @content;
+  }
+}
+@mixin screen-m-xsm() {
+  @include screen-min-width($xsm) {
+    @content;
+  }
+}
+
+%container {
+  margin: 0 auto;
+  width: 90%;
+  // @media (min-width: $screen-small) {
+  //   max-width: 900px;
+  // }
+  // @media (min-width: $screen-medium) {
+  //   max-width: 1300px;
+  // }
+  // @media (min-width: $screen-large) {
+  //   max-width: 1600px;
+  // }
+  @include screen-m-sm() {
+    max-width: 900px;
+  }
+  @include screen-m-md() {
+    max-width: 1300px;
+  }
+  @include screen-m-lg() {
+    max-width: 1600px;
+  }
+}

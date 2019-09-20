@@ -1,10 +1,3 @@
-## Build Setup:
-# Install dependencies:
-npm install
+## Template
 
-# Server with hot reload at http://localhost:8081/
-npm run dev
-
-# Output will be at dist/ folder
-npm run build
-```
+building Bookmal template 

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HW task1</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="global-container">
+
+    <header class="main_header">
+
+      <img class="main_header-logo" src="images/logo.svg" alt="logo image">
+
+      <ul class="main_header-dropdown">
+        <li class="main_header-dropdown_item active">Для усіх</li>
+        <li class="main_header-dropdown_item">Baby Side</li>
+        <li class="main_header-dropdown_item">Teen Side</li>
+      </ul>
+
+      <nav class="main_header-navigation">
+        <ul>
+          <li>Про букмоль</li>
+          <li>Співпраця</li>
+          <li>Підтримка</li>
+        </ul>
+      </nav>
+
+      <button class="main_header-header_icon main_header-header_icon--search button--icon "><img
+          src="images/UI/magnifier.svg" alt="magnifier icon"></button>
+      <button class="main_header-header_icon main_header-header_icon--bookmark button--icon "><img
+          src="images/UI/bookmark.svg" alt="bookmark icon"></button>
+    </header>
+
+    <input id="mainMenuActivator" type="checkbox">
+    <nav class="main_menu active">
+      <label for="mainMenuActivator" class="main_menu-toggler">
+        <img class="burger" src="images/UI/burger.svg" alt="burger icon">
+        <img class="close" src="images/UI/close.svg" alt="close icon">
+      </label>
+      <ul class="main_menu-list">
+        <li class="main_menu-item main_menu-item--active">Головна</li>
+        <li class="main_menu-item">Топ</li>
+        <li class="main_menu-item">Огляди</li>
+        <li class="main_menu-item">Корисні Статті</li>
+        <li class="main_menu-item">Новини</li>
+        <li class="main_menu-item">Авторська колонка</li>
+        <li class="main_menu-item">Інтерактив</li>
+        <li class="main_menu-item">Літклуб</li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-container">
+        <article class="hero-content_block">
+          <figure class="hero-image">
+            <img src="images/common/bearBears.jpg" alt="Bear Bears">
+          </figure>
+          <div class="hero-column">
+            <div class="hero-shrink">
+
+              <header class="hero-category">Корисні статті</header>
+              <div class="hero-card">
+
+                <!-- <h1 class="hero-text">Шість пригодницьких історій для літнього читання</h1> -->
+                <h1 class="hero-text">Тварини Патріка Джорджа: врятуй їх усіх</h1>
+                <div class="hero-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+                <div class="hero-actions">
+                  <button class="hero-button button">Читати</button>
+                  <div class="hero-bookmark bookmark-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="container">
+      <ul class="sorting">
+        <li>Сортувати за:</li>
+        <li class="active">Популярністю</li>
+        <li>Новизною</li>
+      </ul>
+    </div>
+
+    <section class="one_article one_article--right">
+      <div class="one_article-container">
+        <article class="one_article-content_block">
+          <figure class="one_article-image">
+            <img src="images/common/ravlik.jpg" alt="ravlik">
+          </figure>
+          <div class="one_article-column">
+            <div class="one_article-shrink">
+              <header class="one_article-category">Поради</header>
+              <div class="one_article-card">
+                <div class="one_article-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+                <h2 class="one_article-text">"Любий щоденнику": ваш "настільний" психоаналітик</h2>
+                <button class="one_article-button button">Читати</button>
+                <div class="one_article-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="three_articles three_articles--bg_dark">
+      <div class="three_articles-container">
+        <header class="three_articles-section_header">Teen Review</header>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Огляди</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Book.png" alt="book">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">"Любий щоденнику": ваш "настільний" психоаналітик</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Новини</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Knowledge.png" alt="book in a city">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-block_stats block_stats">
+                <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                <a href="#" class="block_stats-views">980</a>
+              </div>
+              <div class="three_articles-card">
+
+                <h4 class="three_articles-text">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Фільми</header>
+          <figure class="three_articles-image">
+            <img src="images/common/photo.png" alt="photo girl">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">Тварини Патріка Джорджа: врятуй їх усіх</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="one_article ">
+      <div class="one_article-container">
+        <article class="one_article-content_block">
+          <figure class="one_article-image">
+            <img src="images/common/cute-brain-cartoon2.jpeg" alt="Cute Brain">
+          </figure>
+          <div class="one_article-column">
+            <div class="one_article-shrink">
+
+              <header class="one_article-category">Корисні статті</header>
+              <div class="one_article-card">
+                <div class="one_article-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+                <h2 class="one_article-text">Шість пригодницьких історій для літнього читання</h2>
+                <button class="one_article-button button">Читати</button>
+                <div class="one_article-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="three_articles three_articles--bg_dark">
+      <div class="three_articles-container">
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Новини</header>
+          <figure class="three_articles-image">
+            <img src="images/common/photo.png" alt="photo girl">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Фільми</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Book.png" alt="book">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">Тварини Патріка Джорджа: врятуй їх усіх</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Огляди</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Knowledge.png" alt="book in a city">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-block_stats block_stats">
+                <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                <a href="#" class="block_stats-views">980</a>
+              </div>
+              <div class="three_articles-card">
+
+                <h4 class="three_articles-text">"Любий щоденнику": ваш "настільний" психоаналітик</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="one_article one_article--left">
+      <div class="one_article-container">
+        <article class="one_article-content_block">
+          <figure class="one_article-image">
+            <img src="images/common/beavers.jpg" alt="beavers">
+          </figure>
+          <div class="one_article-column">
+            <div class="one_article-shrink">
+
+              <header class="one_article-category">Авторська колонка</header>
+              <div class="one_article-card">
+                <div class="one_article-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+                <h2 class="one_article-text">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів
+                </h2>
+                <button class="one_article-button button">Читати</button>
+                <div class="one_article-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="three_articles">
+      <div class="three_articles-container">
+        <header class="three_articles-section_header">Teen Review</header>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Огляди</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Knowledge.png" alt="book in a city">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-block_stats block_stats">
+                <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                <a href="#" class="block_stats-views">980</a>
+              </div>
+              <div class="three_articles-card">
+
+                <h4 class="three_articles-text">Тварини Патріка Джорджа: врятуй їх усіх</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Корисні статті</header>
+          <figure class="three_articles-image">
+            <img src="images/common/Book.png" alt="book">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">"Любий щоденнику": ваш "настільний" психоаналітик</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="three_articles-content_block">
+          <header class="three_articles-category">Фільми</header>
+          <figure class="three_articles-image">
+            <img src="images/common/photo.png" alt="photo girl">
+          </figure>
+          <div class="three_articles-column">
+            <div class="three_articles-shrink">
+
+              <div class="three_articles-card">
+                <div class="three_articles-block_stats block_stats">
+                  <a href="#" class="block_stats-date">1 жовня, 2017</a>
+                  <a href="#" class="block_stats-views">980</a>
+                </div>
+
+                <h4 class="three_articles-text">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів</h4>
+                <button class="three_articles-button button">Читати</button>
+                <div class="three_articles-bookmark bookmark-block"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="main_footer">
+      <div class="main_footer-show_more">
+        <img src="images/ui/rotate.svg" alt="load more">
+        <a href="#">
+          Показати ще
+        </a>
+      </div>
+      <div class="main_footer-container">
+        <div class="main_footer-subscribe">
+          <h6>Підписуйтесь на новини від Bokmal</h6>
+          <div class="subscribe">
+            <input type="text" placeholder="E-Mail">
+            <button class="button--icon"><img src="images/ui/arrow.svg" alt="arrow"></button>
+          </div>
+        </div>
+        <div class="main_footer-social">
+          <h6>Ми є у соціальних мережах</h6>
+          <div class="socials">
+            <button class="button--icon"><img src="images/social/facebook.svg" alt="arrow"></button>
+            <button class="button--icon"><img src="images/social/instagram.svg" alt="arrow"></button>
+            <button class="button--icon"><img src="images/social/twitter.svg" alt="arrow"></button>
+          </div>
+        </div>
+        <div class="main_footer-copy">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi dolorum consequatur placeat iure similique
+          asperiores, expedita eaque alias neque tenetur vel laborum nesciunt fugit impedit dicta facilis? Et pariatur
+          tenetur accusamus omnis, quae animi vitae numquam cumque aut sapiente id laborum iusto dolore quibusdam quidem
+          nobis dignissimos qui dolores. Alias.
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="scroller"></div> -->
+  </div>
+</body>
+
+</html>
