@@ -28,7 +28,7 @@ module.exports = {
     filename: `${PATHS.assets}js/[name].js`,
     // filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: (process.env.NODE_ENV === 'dev' ? '/' : './')
+    // publicPath: (process.env.NODE_ENV === 'dev' ? '/' : './')
   },
   optimization: {
     splitChunks: {
